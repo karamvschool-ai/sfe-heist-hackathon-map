@@ -1,0 +1,2187 @@
+{
+  "version": "heist-foundry-2.1.0",
+  "building": {
+    "minX": -26,
+    "maxX": 26,
+    "minZ": -19,
+    "maxZ": 19,
+    "height": 8.8
+  },
+  "grounds": {
+    "minX": -40,
+    "maxX": 40,
+    "minZ": -31,
+    "maxZ": 31
+  },
+  "hall": {
+    "minX": -10,
+    "maxX": 10,
+    "minZ": 1.8,
+    "maxZ": 19
+  },
+  "gallery": [
+    {
+      "minX": -10,
+      "maxX": 10,
+      "minZ": 1.8,
+      "maxZ": 4.3
+    },
+    {
+      "minX": -10,
+      "maxX": -8,
+      "minZ": 4.3,
+      "maxZ": 19
+    },
+    {
+      "minX": 8,
+      "maxX": 10,
+      "minZ": 4.3,
+      "maxZ": 19
+    }
+  ],
+  "floors": [
+    {
+      "id": "B1",
+      "label": "B1",
+      "name": "Infrastructure & vault",
+      "y": -4.4,
+      "color": "#d5a968"
+    },
+    {
+      "id": "L1",
+      "label": "L1",
+      "name": "Banking & operations",
+      "y": 0,
+      "color": "#b69359"
+    },
+    {
+      "id": "L2",
+      "label": "L2",
+      "name": "Private banking & offices",
+      "y": 4.4,
+      "color": "#996762"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "B1-stair-west",
+      "name": "West stair hall",
+      "kind": "stairs",
+      "floor": "B1",
+      "zone": "circulation",
+      "side": "west",
+      "col": 0,
+      "row": 0,
+      "center": [
+        -21,
+        -4.4,
+        -10.4
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          -4.4,
+          -19
+        ],
+        "max": [
+          -16,
+          0,
+          -1.8
+        ]
+      },
+      "doors": [
+        "B1-stair-west-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-records",
+      "name": "Secure records archive",
+      "kind": "archive",
+      "floor": "B1",
+      "zone": "vault",
+      "side": "west",
+      "col": 0,
+      "row": 0,
+      "center": [
+        -11.65,
+        -4.4,
+        -14.2
+      ],
+      "bounds": {
+        "min": [
+          -16,
+          -4.4,
+          -19
+        ],
+        "max": [
+          -7.3,
+          0,
+          -9.4
+        ]
+      },
+      "doors": [
+        "B1-records-door"
+      ],
+      "connections": [
+        "B1-antechamber"
+      ]
+    },
+    {
+      "id": "B1-antechamber",
+      "name": "Vault antechamber",
+      "kind": "lounge",
+      "floor": "B1",
+      "zone": "vault",
+      "side": "west",
+      "col": 0,
+      "row": 1,
+      "center": [
+        -11.65,
+        -4.4,
+        -5.6000000000000005
+      ],
+      "bounds": {
+        "min": [
+          -16,
+          -4.4,
+          -9.4
+        ],
+        "max": [
+          -7.3,
+          0,
+          -1.8
+        ]
+      },
+      "doors": [
+        "B1-antechamber-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-servers",
+      "name": "Server room",
+      "kind": "server",
+      "floor": "B1",
+      "zone": "infrastructure",
+      "side": "west",
+      "col": 0,
+      "row": 2,
+      "center": [
+        -19.5,
+        -4.4,
+        6.1000000000000005
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          -4.4,
+          1.8
+        ],
+        "max": [
+          -13,
+          0,
+          10.4
+        ]
+      },
+      "doors": [
+        "B1-servers-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-inventory",
+      "name": "Inventory stores",
+      "kind": "storage",
+      "floor": "B1",
+      "zone": "infrastructure",
+      "side": "west",
+      "col": 0,
+      "row": 3,
+      "center": [
+        -19.5,
+        -4.4,
+        14.7
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          -4.4,
+          10.4
+        ],
+        "max": [
+          -13,
+          0,
+          19
+        ]
+      },
+      "doors": [
+        "B1-inventory-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-archive-west",
+      "name": "West archive",
+      "kind": "archive",
+      "floor": "B1",
+      "zone": "infrastructure",
+      "side": "west",
+      "col": 0,
+      "row": 2,
+      "center": [
+        -5.9,
+        -4.4,
+        10.4
+      ],
+      "bounds": {
+        "min": [
+          -10,
+          -4.4,
+          1.8
+        ],
+        "max": [
+          -1.8,
+          0,
+          19
+        ]
+      },
+      "doors": [
+        "B1-archive-west-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-stair-east",
+      "name": "East stair hall",
+      "kind": "stairs",
+      "floor": "B1",
+      "zone": "circulation",
+      "side": "east",
+      "col": 2,
+      "row": 0,
+      "center": [
+        21,
+        -4.4,
+        -10.4
+      ],
+      "bounds": {
+        "min": [
+          16,
+          -4.4,
+          -19
+        ],
+        "max": [
+          26,
+          0,
+          -1.8
+        ]
+      },
+      "doors": [
+        "B1-stair-east-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-reserve",
+      "name": "Reserve storage",
+      "kind": "storage",
+      "floor": "B1",
+      "zone": "vault",
+      "side": "east",
+      "col": 2,
+      "row": 0,
+      "center": [
+        11.65,
+        -4.4,
+        -14.2
+      ],
+      "bounds": {
+        "min": [
+          7.3,
+          -4.4,
+          -19
+        ],
+        "max": [
+          16,
+          0,
+          -9.4
+        ]
+      },
+      "doors": [
+        "B1-reserve-door"
+      ],
+      "connections": [
+        "B1-guard-station"
+      ]
+    },
+    {
+      "id": "B1-guard-station",
+      "name": "Vault administration office",
+      "kind": "office",
+      "floor": "B1",
+      "zone": "vault",
+      "side": "east",
+      "col": 2,
+      "row": 1,
+      "center": [
+        11.65,
+        -4.4,
+        -5.6000000000000005
+      ],
+      "bounds": {
+        "min": [
+          7.3,
+          -4.4,
+          -9.4
+        ],
+        "max": [
+          16,
+          0,
+          -1.8
+        ]
+      },
+      "doors": [
+        "B1-guard-station-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-hvac",
+      "name": "Mechanical room",
+      "kind": "mechanical",
+      "floor": "B1",
+      "zone": "infrastructure",
+      "side": "east",
+      "col": 2,
+      "row": 2,
+      "center": [
+        19.5,
+        -4.4,
+        6.1000000000000005
+      ],
+      "bounds": {
+        "min": [
+          13,
+          -4.4,
+          1.8
+        ],
+        "max": [
+          26,
+          0,
+          10.4
+        ]
+      },
+      "doors": [
+        "B1-hvac-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-loading-annex",
+      "name": "Receiving annex",
+      "kind": "storage",
+      "floor": "B1",
+      "zone": "infrastructure",
+      "side": "east",
+      "col": 2,
+      "row": 3,
+      "center": [
+        19.5,
+        -4.4,
+        14.7
+      ],
+      "bounds": {
+        "min": [
+          13,
+          -4.4,
+          10.4
+        ],
+        "max": [
+          26,
+          0,
+          19
+        ]
+      },
+      "doors": [
+        "B1-loading-annex-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-archive-east",
+      "name": "East archive",
+      "kind": "archive",
+      "floor": "B1",
+      "zone": "infrastructure",
+      "side": "east",
+      "col": 2,
+      "row": 2,
+      "center": [
+        5.9,
+        -4.4,
+        10.4
+      ],
+      "bounds": {
+        "min": [
+          1.8,
+          -4.4,
+          1.8
+        ],
+        "max": [
+          10,
+          0,
+          19
+        ]
+      },
+      "doors": [
+        "B1-archive-east-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-vault",
+      "name": "Central vault",
+      "kind": "vault",
+      "floor": "B1",
+      "zone": "vault",
+      "side": "centre",
+      "col": 1,
+      "row": 0,
+      "center": [
+        0,
+        -4.4,
+        -15.275
+      ],
+      "bounds": {
+        "min": [
+          -7.3,
+          -4.4,
+          -19
+        ],
+        "max": [
+          7.3,
+          0,
+          -11.55
+        ]
+      },
+      "doors": [
+        "B1-vault-door"
+      ],
+      "connections": [
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "L1-stair-west",
+      "name": "West stair hall",
+      "kind": "stairs",
+      "floor": "L1",
+      "zone": "circulation",
+      "side": "west",
+      "col": 0,
+      "row": 0,
+      "center": [
+        -21,
+        0,
+        -10.4
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          0,
+          -19
+        ],
+        "max": [
+          -16,
+          4.4,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L1-stair-west-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-admin-records",
+      "name": "Administrative records",
+      "kind": "archive",
+      "floor": "L1",
+      "zone": "operations",
+      "side": "west",
+      "col": 0,
+      "row": 0,
+      "center": [
+        -9.7,
+        0,
+        -14.2
+      ],
+      "bounds": {
+        "min": [
+          -16,
+          0,
+          -19
+        ],
+        "max": [
+          -3.4,
+          4.4,
+          -9.4
+        ]
+      },
+      "doors": [
+        "L1-admin-records-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-office-a",
+      "name": "Member services",
+      "kind": "office",
+      "floor": "L1",
+      "zone": "operations",
+      "side": "west",
+      "col": 0,
+      "row": 1,
+      "center": [
+        -9.7,
+        0,
+        -5.6000000000000005
+      ],
+      "bounds": {
+        "min": [
+          -16,
+          0,
+          -9.4
+        ],
+        "max": [
+          -3.4,
+          4.4,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L1-office-a-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-registration",
+      "name": "Visitor registration",
+      "kind": "reception",
+      "floor": "L1",
+      "zone": "public",
+      "side": "west",
+      "col": 0,
+      "row": 2,
+      "center": [
+        -19.5,
+        0,
+        6.1000000000000005
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          0,
+          1.8
+        ],
+        "max": [
+          -13,
+          4.4,
+          10.4
+        ]
+      },
+      "doors": [
+        "L1-registration-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-waiting",
+      "name": "West waiting lounge",
+      "kind": "lounge",
+      "floor": "L1",
+      "zone": "public",
+      "side": "west",
+      "col": 0,
+      "row": 3,
+      "center": [
+        -19.5,
+        0,
+        14.7
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          0,
+          10.4
+        ],
+        "max": [
+          -13,
+          4.4,
+          19
+        ]
+      },
+      "doors": [
+        "L1-waiting-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-stair-east",
+      "name": "East stair hall",
+      "kind": "stairs",
+      "floor": "L1",
+      "zone": "circulation",
+      "side": "east",
+      "col": 2,
+      "row": 0,
+      "center": [
+        21,
+        0,
+        -10.4
+      ],
+      "bounds": {
+        "min": [
+          16,
+          0,
+          -19
+        ],
+        "max": [
+          26,
+          4.4,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L1-stair-east-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-administration",
+      "name": "Administration office",
+      "kind": "office",
+      "floor": "L1",
+      "zone": "operations",
+      "side": "east",
+      "col": 2,
+      "row": 0,
+      "center": [
+        9.7,
+        0,
+        -14.2
+      ],
+      "bounds": {
+        "min": [
+          3.4,
+          0,
+          -19
+        ],
+        "max": [
+          16,
+          4.4,
+          -9.4
+        ]
+      },
+      "doors": [
+        "L1-administration-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-security-ops",
+      "name": "Operations office",
+      "kind": "office",
+      "floor": "L1",
+      "zone": "operations",
+      "side": "east",
+      "col": 2,
+      "row": 1,
+      "center": [
+        9.7,
+        0,
+        -5.6000000000000005
+      ],
+      "bounds": {
+        "min": [
+          3.4,
+          0,
+          -9.4
+        ],
+        "max": [
+          16,
+          4.4,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L1-security-ops-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-tellers",
+      "name": "Private teller services",
+      "kind": "reception",
+      "floor": "L1",
+      "zone": "public",
+      "side": "east",
+      "col": 2,
+      "row": 2,
+      "center": [
+        19.5,
+        0,
+        6.1000000000000005
+      ],
+      "bounds": {
+        "min": [
+          13,
+          0,
+          1.8
+        ],
+        "max": [
+          26,
+          4.4,
+          10.4
+        ]
+      },
+      "doors": [
+        "L1-tellers-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-waiting-east",
+      "name": "East waiting lounge",
+      "kind": "lounge",
+      "floor": "L1",
+      "zone": "public",
+      "side": "east",
+      "col": 2,
+      "row": 3,
+      "center": [
+        19.5,
+        0,
+        14.7
+      ],
+      "bounds": {
+        "min": [
+          13,
+          0,
+          10.4
+        ],
+        "max": [
+          26,
+          4.4,
+          19
+        ]
+      },
+      "doors": [
+        "L1-waiting-east-door"
+      ],
+      "connections": [
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-lobby",
+      "name": "Grand banking hall",
+      "kind": "lobby",
+      "floor": "L1",
+      "zone": "public",
+      "side": "centre",
+      "col": 1,
+      "row": 3,
+      "center": [
+        0,
+        0,
+        10.4
+      ],
+      "bounds": {
+        "min": [
+          -10,
+          0,
+          1.8
+        ],
+        "max": [
+          10,
+          8.8,
+          19
+        ]
+      },
+      "doors": [
+        "L1-lobby-entry",
+        "L1-lobby-west-door",
+        "L1-lobby-east-door"
+      ],
+      "connections": [
+        "exterior",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L2-stair-west",
+      "name": "West stair hall",
+      "kind": "stairs",
+      "floor": "L2",
+      "zone": "circulation",
+      "side": "west",
+      "col": 0,
+      "row": 0,
+      "center": [
+        -21,
+        4.4,
+        -10.4
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          4.4,
+          -19
+        ],
+        "max": [
+          -16,
+          8.8,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L2-stair-west-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-lab-a",
+      "name": "Private banking office",
+      "kind": "office",
+      "floor": "L2",
+      "zone": "operations",
+      "side": "west",
+      "col": 0,
+      "row": 0,
+      "center": [
+        -9.7,
+        4.4,
+        -14.2
+      ],
+      "bounds": {
+        "min": [
+          -16,
+          4.4,
+          -19
+        ],
+        "max": [
+          -3.4,
+          8.8,
+          -9.4
+        ]
+      },
+      "doors": [
+        "L2-lab-a-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-conference-a",
+      "name": "Board conference room",
+      "kind": "conference",
+      "floor": "L2",
+      "zone": "operations",
+      "side": "west",
+      "col": 0,
+      "row": 1,
+      "center": [
+        -9.7,
+        4.4,
+        -5.6000000000000005
+      ],
+      "bounds": {
+        "min": [
+          -16,
+          4.4,
+          -9.4
+        ],
+        "max": [
+          -3.4,
+          8.8,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L2-conference-a-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-executive",
+      "name": "Executive office suite",
+      "kind": "executive",
+      "floor": "L2",
+      "zone": "private-banking",
+      "side": "west",
+      "col": 0,
+      "row": 2,
+      "center": [
+        -19.5,
+        4.4,
+        6.1000000000000005
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          4.4,
+          1.8
+        ],
+        "max": [
+          -13,
+          8.8,
+          10.4
+        ]
+      },
+      "doors": [
+        "L2-executive-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-documentation",
+      "name": "Banking records library",
+      "kind": "archive",
+      "floor": "L2",
+      "zone": "private-banking",
+      "side": "west",
+      "col": 0,
+      "row": 3,
+      "center": [
+        -19.5,
+        4.4,
+        14.7
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          4.4,
+          10.4
+        ],
+        "max": [
+          -13,
+          8.8,
+          19
+        ]
+      },
+      "doors": [
+        "L2-documentation-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-stair-east",
+      "name": "East stair hall",
+      "kind": "stairs",
+      "floor": "L2",
+      "zone": "circulation",
+      "side": "east",
+      "col": 2,
+      "row": 0,
+      "center": [
+        21,
+        4.4,
+        -10.4
+      ],
+      "bounds": {
+        "min": [
+          16,
+          4.4,
+          -19
+        ],
+        "max": [
+          26,
+          8.8,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L2-stair-east-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-lab-c",
+      "name": "Investment advisory office",
+      "kind": "office",
+      "floor": "L2",
+      "zone": "operations",
+      "side": "east",
+      "col": 2,
+      "row": 0,
+      "center": [
+        9.7,
+        4.4,
+        -14.2
+      ],
+      "bounds": {
+        "min": [
+          3.4,
+          4.4,
+          -19
+        ],
+        "max": [
+          16,
+          8.8,
+          -9.4
+        ]
+      },
+      "doors": [
+        "L2-lab-c-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-conference-b",
+      "name": "Client meeting room",
+      "kind": "conference",
+      "floor": "L2",
+      "zone": "operations",
+      "side": "east",
+      "col": 2,
+      "row": 1,
+      "center": [
+        9.7,
+        4.4,
+        -5.6000000000000005
+      ],
+      "bounds": {
+        "min": [
+          3.4,
+          4.4,
+          -9.4
+        ],
+        "max": [
+          16,
+          8.8,
+          -1.8
+        ]
+      },
+      "doors": [
+        "L2-conference-b-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-quiet-office",
+      "name": "Legal and compliance office",
+      "kind": "office",
+      "floor": "L2",
+      "zone": "private-banking",
+      "side": "east",
+      "col": 2,
+      "row": 2,
+      "center": [
+        19.5,
+        4.4,
+        6.1000000000000005
+      ],
+      "bounds": {
+        "min": [
+          13,
+          4.4,
+          1.8
+        ],
+        "max": [
+          26,
+          8.8,
+          10.4
+        ]
+      },
+      "doors": [
+        "L2-quiet-office-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-break",
+      "name": "Employee lounge",
+      "kind": "break",
+      "floor": "L2",
+      "zone": "private-banking",
+      "side": "east",
+      "col": 2,
+      "row": 3,
+      "center": [
+        19.5,
+        4.4,
+        14.7
+      ],
+      "bounds": {
+        "min": [
+          13,
+          4.4,
+          10.4
+        ],
+        "max": [
+          26,
+          8.8,
+          19
+        ]
+      },
+      "doors": [
+        "L2-break-door"
+      ],
+      "connections": [
+        "L2-circulation"
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "B1-stair-west-door",
+      "roomId": "B1-stair-west",
+      "floor": "B1",
+      "position": [
+        -21,
+        -4.4,
+        -1.8
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-stair-west",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-records-door",
+      "roomId": "B1-records",
+      "floor": "B1",
+      "position": [
+        -11,
+        -4.4,
+        -9.4
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-records",
+        "B1-antechamber"
+      ]
+    },
+    {
+      "id": "B1-antechamber-door",
+      "roomId": "B1-antechamber",
+      "floor": "B1",
+      "position": [
+        -7.3,
+        -4.4,
+        -5.6000000000000005
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-antechamber",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-servers-door",
+      "roomId": "B1-servers",
+      "floor": "B1",
+      "position": [
+        -13,
+        -4.4,
+        6.1000000000000005
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-servers",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-inventory-door",
+      "roomId": "B1-inventory",
+      "floor": "B1",
+      "position": [
+        -13,
+        -4.4,
+        14.7
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-inventory",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-archive-west-door",
+      "roomId": "B1-archive-west",
+      "floor": "B1",
+      "position": [
+        -5.9,
+        -4.4,
+        1.8
+      ],
+      "axis": "x",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-archive-west",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-stair-east-door",
+      "roomId": "B1-stair-east",
+      "floor": "B1",
+      "position": [
+        21,
+        -4.4,
+        -1.8
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-stair-east",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-reserve-door",
+      "roomId": "B1-reserve",
+      "floor": "B1",
+      "position": [
+        11,
+        -4.4,
+        -9.4
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-reserve",
+        "B1-guard-station"
+      ]
+    },
+    {
+      "id": "B1-guard-station-door",
+      "roomId": "B1-guard-station",
+      "floor": "B1",
+      "position": [
+        7.3,
+        -4.4,
+        -5.6000000000000005
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-guard-station",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-hvac-door",
+      "roomId": "B1-hvac",
+      "floor": "B1",
+      "position": [
+        13,
+        -4.4,
+        6.1000000000000005
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-hvac",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-loading-annex-door",
+      "roomId": "B1-loading-annex",
+      "floor": "B1",
+      "position": [
+        13,
+        -4.4,
+        14.7
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-loading-annex",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-archive-east-door",
+      "roomId": "B1-archive-east",
+      "floor": "B1",
+      "position": [
+        5.9,
+        -4.4,
+        1.8
+      ],
+      "axis": "x",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "B1-archive-east",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "B1-vault-door",
+      "roomId": "B1-vault",
+      "floor": "B1",
+      "position": [
+        0,
+        -4.4,
+        -11.55
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 4.05,
+      "height": 3.95,
+      "kind": "vault",
+      "connects": [
+        "B1-vault",
+        "B1-circulation"
+      ]
+    },
+    {
+      "id": "L1-stair-west-door",
+      "roomId": "L1-stair-west",
+      "floor": "L1",
+      "position": [
+        -21,
+        0,
+        -1.8
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-stair-west",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-admin-records-door",
+      "roomId": "L1-admin-records",
+      "floor": "L1",
+      "position": [
+        -3.4,
+        0,
+        -14.2
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-admin-records",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-office-a-door",
+      "roomId": "L1-office-a",
+      "floor": "L1",
+      "position": [
+        -3.4,
+        0,
+        -5.6000000000000005
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-office-a",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-registration-door",
+      "roomId": "L1-registration",
+      "floor": "L1",
+      "position": [
+        -13,
+        0,
+        6.1000000000000005
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-registration",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-waiting-door",
+      "roomId": "L1-waiting",
+      "floor": "L1",
+      "position": [
+        -13,
+        0,
+        14.7
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-waiting",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-stair-east-door",
+      "roomId": "L1-stair-east",
+      "floor": "L1",
+      "position": [
+        21,
+        0,
+        -1.8
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-stair-east",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-administration-door",
+      "roomId": "L1-administration",
+      "floor": "L1",
+      "position": [
+        3.4,
+        0,
+        -14.2
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-administration",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-security-ops-door",
+      "roomId": "L1-security-ops",
+      "floor": "L1",
+      "position": [
+        3.4,
+        0,
+        -5.6000000000000005
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-security-ops",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-tellers-door",
+      "roomId": "L1-tellers",
+      "floor": "L1",
+      "position": [
+        13,
+        0,
+        6.1000000000000005
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-tellers",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-waiting-east-door",
+      "roomId": "L1-waiting-east",
+      "floor": "L1",
+      "position": [
+        13,
+        0,
+        14.7
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L1-waiting-east",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-lobby-entry",
+      "roomId": "L1-lobby",
+      "floor": "L1",
+      "position": [
+        0,
+        0,
+        19
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 4.4,
+      "height": 3.2,
+      "kind": "entrance",
+      "connects": [
+        "L1-lobby",
+        "exterior"
+      ]
+    },
+    {
+      "id": "L1-lobby-west-door",
+      "roomId": "L1-lobby",
+      "floor": "L1",
+      "position": [
+        -6.5,
+        0,
+        1.8
+      ],
+      "axis": "x",
+      "inward": 1,
+      "width": 2.25,
+      "height": 2.75,
+      "kind": "standard",
+      "connects": [
+        "L1-lobby",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L1-lobby-east-door",
+      "roomId": "L1-lobby",
+      "floor": "L1",
+      "position": [
+        6.5,
+        0,
+        1.8
+      ],
+      "axis": "x",
+      "inward": 1,
+      "width": 2.25,
+      "height": 2.75,
+      "kind": "standard",
+      "connects": [
+        "L1-lobby",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "L2-stair-west-door",
+      "roomId": "L2-stair-west",
+      "floor": "L2",
+      "position": [
+        -21,
+        4.4,
+        -1.8
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-stair-west",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-lab-a-door",
+      "roomId": "L2-lab-a",
+      "floor": "L2",
+      "position": [
+        -3.4,
+        4.4,
+        -14.2
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-lab-a",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-conference-a-door",
+      "roomId": "L2-conference-a",
+      "floor": "L2",
+      "position": [
+        -3.4,
+        4.4,
+        -5.6000000000000005
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-conference-a",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-executive-door",
+      "roomId": "L2-executive",
+      "floor": "L2",
+      "position": [
+        -13,
+        4.4,
+        6.1000000000000005
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-executive",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-documentation-door",
+      "roomId": "L2-documentation",
+      "floor": "L2",
+      "position": [
+        -13,
+        4.4,
+        14.7
+      ],
+      "axis": "z",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-documentation",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-stair-east-door",
+      "roomId": "L2-stair-east",
+      "floor": "L2",
+      "position": [
+        21,
+        4.4,
+        -1.8
+      ],
+      "axis": "x",
+      "inward": -1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-stair-east",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-lab-c-door",
+      "roomId": "L2-lab-c",
+      "floor": "L2",
+      "position": [
+        3.4,
+        4.4,
+        -14.2
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-lab-c",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-conference-b-door",
+      "roomId": "L2-conference-b",
+      "floor": "L2",
+      "position": [
+        3.4,
+        4.4,
+        -5.6000000000000005
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-conference-b",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-quiet-office-door",
+      "roomId": "L2-quiet-office",
+      "floor": "L2",
+      "position": [
+        13,
+        4.4,
+        6.1000000000000005
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-quiet-office",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "L2-break-door",
+      "roomId": "L2-break",
+      "floor": "L2",
+      "position": [
+        13,
+        4.4,
+        14.7
+      ],
+      "axis": "z",
+      "inward": 1,
+      "width": 2.05,
+      "height": 2.65,
+      "kind": "standard",
+      "connects": [
+        "L2-break",
+        "L2-circulation"
+      ]
+    },
+    {
+      "id": "entrance-service-door",
+      "roomId": null,
+      "position": [
+        26,
+        0,
+        0
+      ],
+      "floor": "L1",
+      "axis": "z",
+      "inward": -1,
+      "width": 3.2,
+      "height": 2.9,
+      "kind": "entrance",
+      "connects": [
+        "exterior",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "entrance-staff-door",
+      "roomId": null,
+      "position": [
+        -26,
+        0,
+        0
+      ],
+      "floor": "L1",
+      "axis": "z",
+      "inward": 1,
+      "width": 3.2,
+      "height": 2.9,
+      "kind": "entrance",
+      "connects": [
+        "exterior",
+        "L1-circulation"
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "entrance-public",
+      "doorId": "L1-lobby-entry",
+      "name": "Main public entrance",
+      "floor": "L1",
+      "position": [
+        0,
+        0,
+        19
+      ],
+      "spawn": [
+        0,
+        0,
+        25
+      ],
+      "yaw": 0,
+      "axis": "x",
+      "width": 4.4,
+      "height": 3.2,
+      "inward": -1,
+      "connects": [
+        "exterior",
+        "L1-lobby"
+      ]
+    },
+    {
+      "id": "entrance-service",
+      "doorId": "entrance-service-door",
+      "name": "East service entrance",
+      "floor": "L1",
+      "position": [
+        26,
+        0,
+        0
+      ],
+      "spawn": [
+        31,
+        0,
+        0
+      ],
+      "yaw": 1.5707963267948966,
+      "axis": "z",
+      "width": 3.2,
+      "height": 2.9,
+      "inward": -1,
+      "connects": [
+        "exterior",
+        "L1-circulation"
+      ]
+    },
+    {
+      "id": "entrance-staff",
+      "doorId": "entrance-staff-door",
+      "name": "West staff entrance",
+      "floor": "L1",
+      "position": [
+        -26,
+        0,
+        0
+      ],
+      "spawn": [
+        -31,
+        0,
+        0
+      ],
+      "yaw": -1.5707963267948966,
+      "axis": "z",
+      "width": 3.2,
+      "height": 2.9,
+      "inward": 1,
+      "connects": [
+        "exterior",
+        "L1-circulation"
+      ]
+    }
+  ],
+  "stairs": [
+    {
+      "id": "stairs-west",
+      "name": "West stairs",
+      "x": -22.9,
+      "zMin": -16,
+      "zMax": -5.4,
+      "width": 2.5,
+      "roomIds": [
+        "B1-stair-west",
+        "L1-stair-west",
+        "L2-stair-west"
+      ],
+      "flights": [
+        {
+          "lowerY": -4.4,
+          "upperY": 0
+        },
+        {
+          "lowerY": 0,
+          "upperY": 4.4
+        }
+      ],
+      "bounds": {
+        "min": [
+          -26,
+          -4.4,
+          -19
+        ],
+        "max": [
+          -16,
+          8.8,
+          -1.8
+        ]
+      }
+    },
+    {
+      "id": "stairs-east",
+      "name": "East stairs",
+      "x": 22.9,
+      "zMin": -16,
+      "zMax": -5.4,
+      "width": 2.5,
+      "roomIds": [
+        "B1-stair-east",
+        "L1-stair-east",
+        "L2-stair-east"
+      ],
+      "flights": [
+        {
+          "lowerY": -4.4,
+          "upperY": 0
+        },
+        {
+          "lowerY": 0,
+          "upperY": 4.4
+        }
+      ],
+      "bounds": {
+        "min": [
+          16,
+          -4.4,
+          -19
+        ],
+        "max": [
+          26,
+          8.8,
+          -1.8
+        ]
+      }
+    },
+    {
+      "id": "stairs-grand",
+      "x": 0,
+      "width": 3.2,
+      "zMin": 4.3,
+      "zMax": 14,
+      "lowerY": 0,
+      "upperY": 4.4,
+      "minX": -1.6,
+      "maxX": 1.6,
+      "minZ": 4.3,
+      "maxZ": 14,
+      "z0": 14,
+      "z1": 4.3,
+      "y0": 0,
+      "y1": 4.4,
+      "name": "Grand banking hall stair",
+      "floorConnections": [
+        "L1",
+        "L2"
+      ],
+      "roomIds": [
+        "L1-lobby",
+        "L2-circulation"
+      ],
+      "bounds": {
+        "min": [
+          -1.6,
+          0,
+          4.3
+        ],
+        "max": [
+          1.6,
+          4.4,
+          14
+        ]
+      }
+    }
+  ],
+  "elevator": {
+    "id": "elevator-central",
+    "name": "Central elevator",
+    "position": [
+      0,
+      0,
+      -5.5
+    ],
+    "bounds": {
+      "min": [
+        -1.42,
+        -4.4,
+        -6.9
+      ],
+      "max": [
+        1.42,
+        8.8,
+        -4.1
+      ]
+    },
+    "stops": [
+      {
+        "floor": "B1",
+        "y": -4.4,
+        "lobby": [
+          0,
+          -4.4,
+          -2.7
+        ],
+        "rearLobby": [
+          0,
+          -4.4,
+          -7.6
+        ]
+      },
+      {
+        "floor": "L1",
+        "y": 0,
+        "lobby": [
+          0,
+          0,
+          -2.7
+        ]
+      },
+      {
+        "floor": "L2",
+        "y": 4.4,
+        "lobby": [
+          0,
+          4.4,
+          -2.7
+        ]
+      }
+    ]
+  },
+  "vaultApproach": {
+    "minX": -7.3,
+    "maxX": 7.3,
+    "minZ": -11.55,
+    "maxZ": -6.9
+  },
+  "objective": {
+    "id": "vault-objective",
+    "vaultId": "B1-vault",
+    "assetId": "asset-foundry-core",
+    "position": [
+      0,
+      -4.4,
+      -16.55
+    ],
+    "radius": 1.6,
+    "bounds": {
+      "min": [
+        -1.6,
+        -4.4,
+        -18.15
+      ],
+      "max": [
+        1.6,
+        -2.4,
+        -14.95
+      ]
+    }
+  }
+}

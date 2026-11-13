@@ -1,6 +1,6 @@
 # Room and door registry
 
-heist-foundry-2.1.0 has 34 rooms across three levels, including six service stair halls, and 38 doors. Coordinates are in meters and are measured at the finished floor.
+heist-foundry-2.1.1 has 34 rooms across three levels, including six service stair halls, and 38 doors. Coordinates are in meters and are measured at the finished floor.
 
 | Floor | Room ID | Name | Kind | Center X, Y, Z | Door IDs |
 | --- | --- | --- | --- | --- | --- |

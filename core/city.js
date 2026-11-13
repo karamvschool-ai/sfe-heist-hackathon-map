@@ -200,6 +200,47 @@ function carvedInscription(kit, text, y, z, width, height) {
     mesh.scale.set(width, height, 1);
 }
 
+function porticoPediment(kit, base, front, back) {
+    const halfWidth = 11.28;
+    const rise = 3.84;
+    const pitch = Math.atan2(rise, halfWidth);
+    const rakeY = x => rise * (1 - Math.abs(x) / halfWidth);
+    const carve = (points, z, depth, finish) => {
+        return customMesh(kit, extrudeShape(polygon(points), depth), finish, 0, base, z);
+    };
+
+    // Solid stone tympanum and pitched coping above the entrance portico.
+    carve([[-10.96, 0], [10.96, 0], [0, 3.71]], back, front - back, 'limestone');
+    const rake = (width, peak, thickness) => [
+        [-width, 0], [0, peak], [width, 0],
+        [width - thickness * 2.9, 0], [0, peak - thickness], [-width + thickness * 2.9, 0],
+    ];
+    carve(rake(halfWidth, rise, .19), back - .16, front - back + .46, 'stoneTrim');
+    carve(rake(11.08, 3.64, .12), front - .015, .18, 'limestone');
+    for (const side of [-1, 1]) {
+        for (let offset = .43; offset < 10.2; offset += .56) {
+            const dentil = kit.box(side * offset, base + rakeY(offset) - .39, front + .075, .21, .17, .19, 'stoneTrim');
+            dentil.rotation.z = -side * pitch;
+        }
+    }
+
+    // The crest and mirrored leaves are cut from the same stone as the columns.
+    const shield = [
+        [-.71, 1.68], [-.47, 1.63], [0, 1.77], [.47, 1.63], [.71, 1.68],
+        [.66, 1.05], [.46, .75], [0, .47], [-.46, .75], [-.66, 1.05],
+    ];
+    carve(shield, front, .105, 'stoneTrim');
+    carve(shield.map(([x, y]) => [x * .79, 1.15 + (y - 1.15) * .79]), front + .105, .038, 'limestone');
+    const leafGeometry = cached('pediment-carving-leaf', () => new THREE.SphereGeometry(1, 12, 8));
+    for (const side of [-1, 1]) for (let index = 0; index < 6; index++) {
+        const arc = index / 5;
+        const leaf = customMesh(kit, leafGeometry, 'stoneTrim',
+            side * (.79 + arc * 1.31), base + .57 + arc * arc * .69, front + .035);
+        leaf.scale.set(.26, .076, .073);
+        leaf.rotation.z = side * (.22 + arc * .65);
+    }
+}
+
 export function decorateBankExterior(kit) {
     for (const y of [0, 4.4]) {
         for (const x of [-22.3, -17.1, -5.8, 5.8, 17.1, 22.3]) {
@@ -253,6 +294,7 @@ export function decorateBankExterior(kit) {
     for (let x = -10; x <= 10; x += .8) kit.box(x, 8.565, 22.515, .23, .16, .13, 'stoneTrim');
     kit.box(0, 9.19, 22.455, 17.8, .57, .13, 'stoneTrim');
     carvedInscription(kit, 'FOUNDRY NATIONAL BANK', 9.19, 22.526, 17.5, .51);
+    porticoPediment(kit, 10.03, 22.63, 18.88);
 }
 
 function tree(kit, x, z, variant = 0) {

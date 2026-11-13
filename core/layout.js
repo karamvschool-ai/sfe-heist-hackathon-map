@@ -1,5 +1,5 @@
 /** Canonical bank plan. Units are metres, +Y is up, +X east, and +Z south. */
-export const MAP_VERSION = 'heist-foundry-2.1.0';
+export const MAP_VERSION = 'heist-foundry-2.1.1';
 export const STOREY_HEIGHT = 4.4;
 export const FLOORS = [
     { id: 'B1', label: 'B1', name: 'Infrastructure & vault', y: -4.4, color: '#d5a968' },
